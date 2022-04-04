@@ -1,0 +1,209 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(to right, #9ba5be, #52658d);      
+  .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 8rem;
+    background: var(--primary);
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
+    @media only screen and (max-width: 768px) {
+      padding: 7px 10px;
+    }
+    .img-wrapper {
+      width: 45px;
+      height: 45px;
+      background: var(--white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      img {
+        width: 30px;
+        height: 35px;
+      }
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+          padding: 10px 25px;
+          text-align: center;
+          cursor: pointer;
+          font-size: .8rem;
+          @media only screen and (max-width: 768px) {
+            padding: 5px 15px;
+          }
+        }
+        li:first-child {
+          background-color: #484343;
+          border-radius: 5px;
+        }
+      }
+      .user-wrapper {
+        display: flex;
+        align-items: center;
+        .user {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background-color: #e8dfdf;
+          @media only screen and (max-width: 768px) {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+  .search {
+    text-align: center;
+    z-index: -10;
+    padding-top: 10px;
+    input {
+      width: 30%;
+      outline: none;
+      padding: 10px 20px;
+      border: 2px solid #52658d;
+      background: transparent;
+      border-radius: 5px;
+      @media only screen and (max-width: 768px) {
+        width: 60%;
+      }
+    }
+    span {
+      margin-left: 10px;
+      font-weight: bold;
+      color: #52658d;
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  .modal {
+    position: absolute;
+    top: 7rem;
+    width: 100%;
+    .modal-wrapper {
+      position: relative;
+      max-width: 70%;
+      max-height: 600px;
+      background: var(--white);
+      margin: 0 auto;
+      display: flex;
+      @media only screen and (max-width: 768px) {
+        max-width: 80%;
+        display: block;
+      }
+      .img-wrapper {
+        width: 50%;
+        overflow-y: hidden;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      .text-wrapper {
+        width: 50%;
+        padding: 40px 0 0 40px;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
+        h4 {
+          font-size: 40px;
+          font-weight: normal;
+          letter-spacing: 2px;
+        }
+        .sub-text, .secondSub-text {
+          padding: 10px 5rem 2rem 0;
+          @media only screen and (max-width: 768px) {
+            padding: 10px 2rem 2rem 0;
+          }
+        }
+        .secondSub-text {
+          padding: 10px 10rem 2rem 0;
+        }
+        p {
+          font-size: 10px;
+        }
+      }
+      .number-input {
+        position: relative;
+        input {
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid var(--primary);
+          outline: none;
+          margin-bottom: 20px;
+          padding: 5px 0;
+        }
+        span {
+          position: absolute;
+          left: 10.5rem;
+          font-size: 10px;
+          margin-top: 7px;
+          color: rgb(38, 178, 38);
+        }
+      }
+      .button, .secondButton {
+        padding: 5px 5rem;
+        background: var(--secondary);
+        margin: 10px 0;
+        cursor: pointer;
+        font-size: 10px;
+      }
+      .secondButton {
+        padding: 5px 3rem;
+      }
+      .button:hover {
+        border: 2px solid var(--secondary);
+        background: transparent;
+      }
+      .secondButton:hover {
+        border: 2px solid var(--secondary);
+        background: transparent;
+      }
+      .bottom-image {
+        bottom: 0;
+        text-align: right;
+        @media only screen and (max-width: 768px) {
+          margin-top: 20px; 
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      .chat-image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    }
+  }
+}
