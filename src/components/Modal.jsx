@@ -15,7 +15,7 @@ const Modal = () => {
         <div className="img-wrapper">
           <img src={BgImg} alt="bgImg" />
         </div>
-        {secondClick ? (
+        {/* {secondClick ? (
           <div className="text-wrapper">
             <h4>
               Welcome to <br /> partners dashboard
@@ -59,7 +59,29 @@ const Modal = () => {
               <img src={Chat} alt="ballon" />
             </div>
           </div>
-        )}
+        )} */}
+        <div className="text-wrapper">
+            <h4>Enter OTP</h4>
+            <div className="secondSub-text">
+              <p>
+                1. Save the number +234 (0)90 53 53 53 33 on whatsapp on Creditclan
+              </p>
+              <p>
+                2. Chat the keyword OTP
+              </p>
+              <p>
+                3. A 6 digit keyword is created
+              </p>
+            </div>
+            <div className="number-input">
+              <input type="text" placeholder="0811 889 7880" />
+              <span>Change</span>
+            </div>
+            <span className="button" onClick={() => confirmSecondClick}></span>
+            <div className="chat-image">
+              <img src={Chat} alt="ballon" />
+            </div>
+          </div>
       </div>
     </div>
   );
