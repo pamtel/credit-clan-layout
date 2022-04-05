@@ -9,6 +9,7 @@ const WelcomeStage = ({Security}) => {
       </h4>
       <div className="sub-text">
         <p>We are exicted to welcome you to the biggest IBNPL across Africa.</p>
+        <br />
         <p>
           We are looking for the customer credit space very differently and our
           partnership for funding and embeded makes it a win-win for everyone.
