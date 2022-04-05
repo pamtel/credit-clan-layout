@@ -15,7 +15,7 @@ const Modal = () => {
   const Welcome = () => {
     setOnBardingStage('welcome');
   }
-  console.log(onBardingStage)
+
   return (
     <div className="modal">
       <div className="modal-wrapper">

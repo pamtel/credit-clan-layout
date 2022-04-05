@@ -14,7 +14,7 @@ const WelcomeStage = ({Security}) => {
           partnership for funding and embeded makes it a win-win for everyone.
         </p>
       </div>
-      <span className="button" onClick={Security}></span>
+      <span className="button" onClick={Security}>Continue</span>
       <div className="bottom-image">
         <img src={Baloon} alt="ballon" />
       </div>

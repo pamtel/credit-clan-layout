@@ -20,7 +20,7 @@ const OTP = ({Welcome}) => {
         <input type="text" />
         <input type="text" />
       </div>
-      <span className="button" onClick={Welcome}></span>
+      <span className="button" onClick={Welcome}>Verify</span>
       <div className="chat-image">
         <img src={Chat} alt="ballon" />
       </div>

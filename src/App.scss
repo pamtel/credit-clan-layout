@@ -1,6 +1,6 @@
 .app {
   min-height: 100vh;
-  background: linear-gradient(to right, #9ba5be, #52658d);      
+  background: linear-gradient(to right, #9ba5be, #52658d); 
   .header {
     width: 100%;
     display: flex;
@@ -103,6 +103,9 @@
       margin: 0 auto;
       display: flex;
       @media only screen and (max-width: 768px) {
+        height: 100%;
+      }
+      @media only screen and (max-width: 768px) {
         max-width: 80%;
         display: block;
       }
@@ -124,6 +127,7 @@
         padding: 40px 0 0 40px;
         @media only screen and (max-width: 768px) {
           width: 100%;
+          padding: 20px 0 0 20px;
         }
         h4 {
           font-size: 40px;
@@ -138,6 +142,9 @@
         }
         .secondSub-text {
           padding: 10px 10rem 2rem 0;
+          @media only screen and (max-width: 768px) {
+            padding: 10px 2rem 2rem 0;
+          }
         }
         p {
           font-size: 10px;
@@ -152,6 +159,9 @@
           outline: none;
           margin-bottom: 20px;
           padding: 5px 0;
+          @media only screen and (max-width: 768px) {
+            width: 80%;
+          }
         }
         span {
           position: absolute;
@@ -170,23 +180,19 @@
           outline: none;
         }
       }
-      .button, .secondButton {
-        padding: 5px 5rem;
+      .button {
+        padding: 5px 2rem;
         background: var(--secondary);
         margin: 10px 0;
         cursor: pointer;
         font-size: 10px;
-      }
-      .secondButton {
-        padding: 5px 3rem;
+        border-radius: 10px;
+        color: var(--white);
       }
       .button:hover {
         border: 2px solid var(--secondary);
         background: transparent;
-      }
-      .secondButton:hover {
-        border: 2px solid var(--secondary);
-        background: transparent;
+        color: var(--secondary);
       }
       .bottom-image {
         width: 150px;
@@ -196,7 +202,7 @@
         overflow-y: hidden;
         position: absolute;
         @media only screen and (max-width: 768px) {
-          margin-top: 20px; 
+          display: none;
         }
         img {
           width: 100%;
@@ -210,6 +216,9 @@
         bottom: 0;
         right: 0;
         z-index: 10;
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
         img {
           width: 100%;
           height: 100%;

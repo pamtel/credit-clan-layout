@@ -16,7 +16,7 @@ const SecurityStage = ({OTPStage}) => {
         <input type="text" placeholder="0811 889 7880" />
         <span>Change</span>
       </div>
-      <span className="secondButton" onClick={OTPStage}>
+      <span className="button" onClick={OTPStage}>
         Get OTP
       </span>
       <div className="chat-image">
